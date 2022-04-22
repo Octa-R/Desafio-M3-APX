@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap');
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -8,8 +15,17 @@ body {
 }
 
 .header {
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #eeeeee;
     background-image: url("./img/puntitos.svg");
+    padding: 18px 20px 18px 17px;
+}
+
+.logo {
+    width: 54px;
 }
 
 .main {
@@ -17,12 +33,35 @@ body {
     height: 594px;
     width: 100%;
     background-image: url("./img/puntitos.svg");
+    padding: 80px 42px 0;
+    position: relative;
+}
+
+.titulo-bienvenida {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* https://stackoverflow.com/questions/29660182/how-to-stick-image-to-border-of-div */
+
+.imagen-bienvenida {
+    margin: auto;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
 }
 
 .section-a {
     background-color: #141414;
     color: #FAFAFA;
     height: 538px;
+}
+
+.titulo-soy {
+    margin: 0;
 }
 
 .section-b {
@@ -43,4 +82,8 @@ body {
 .footer {
     background-color: #eeeeee;
     height: 493px;
+}
+
+.red-social-link>img {
+    width: 30px;
 }
