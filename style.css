@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: #eeeeee;
+    background-image: url("./img/puntitos.svg");
+}
+
+.main {
+    background-color: #eeeeee;
+    height: 594px;
+    width: 100%;
+    background-image: url("./img/puntitos.svg");
+}
+
+.section-a {
+    background-color: #141414;
+    color: #FAFAFA;
+    height: 538px;
+}
+
+.section-b {
+    background-color: #FAFAFA;
+    height: 1375px;
+}
+
+.section-b>h1 {
+    font-size: 32px;
+}
+
+.section-c {
+    color: #FAFAFA;
+    background-color: #141414;
+    height: 660px;
+}
+
+.footer {
+    background-color: #eeeeee;
+    height: 493px;
+}
