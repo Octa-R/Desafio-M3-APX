@@ -58,18 +58,57 @@ body {
     background-color: #141414;
     color: #FAFAFA;
     height: 538px;
+    width: 100%;
+    padding: 55px 32px;
+    text-align: center;
+}
+
+.section-a>img {
+    margin: 20px auto;
+    width: 80px;
 }
 
 .titulo-soy {
+    text-align: center;
     margin: 0;
+}
+
+.parrafo-soy {
+    text-align: left;
 }
 
 .section-b {
     background-color: #FAFAFA;
     height: 1375px;
+    padding: 70px 52px;
+    text-align: center;
 }
 
-.section-b>h1 {
+.titulo-servicios {
+    margin-bottom: 50px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.service-card>p {
+    margin: 0;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.titulo-servicios {
+    margin: 0;
     font-size: 32px;
 }
 
@@ -77,6 +116,10 @@ body {
     color: #FAFAFA;
     background-color: #141414;
     height: 660px;
+}
+
+.titulo-contacto {
+    margin: 0;
 }
 
 .footer {
