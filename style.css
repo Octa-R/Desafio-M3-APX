@@ -62,14 +62,34 @@ body {
     font-size: 48px;
     font-weight: 700;
     padding: 200px 80px;
-    width: 500px;
+    width: 375px;
     text-align: left;
+}
+
+@media (max-width: 390px) {
+    .titulo-bienvenida {
+        padding: 0;
+        text-align: center;
+    }
+    .img-wrapper {
+        flex-direction: column;
+    }
+    .imagen-bienvenida {
+        margin: 0 auto !important;
+    }
 }
 
 .imagen-bienvenida {
     width: 300px;
     align-self: flex-end;
-    margin-right: 80px;
+}
+
+@media (min-width: 960px) {
+    .imagen-bienvenida {
+        width: 500px;
+        height: 525px;
+        margin-right: 80px;
+    }
 }
 
 .img-wrapper {
@@ -79,17 +99,10 @@ body {
     height: 100%;
 }
 
-@media (min-width: 960px) {
-    .imagen-bienvenida {
-        width: 500px;
-        height: 525px;
-    }
-}
-
 .section-a {
     background-color: #141414;
     color: #FAFAFA;
-    height: 538px;
+    min-height: 538px;
     width: 100%;
     padding: 55px 32px;
 }
@@ -111,13 +124,20 @@ body {
 
 .contenedor-presentacion {
     display: flex;
+    flex-direction: column-reverse;
     align-content: center;
     justify-content: center;
     gap: 90px;
 }
 
+@media (min-width: 960px) {
+    .contenedor-presentacion {
+        flex-direction: row;
+    }
+}
+
 .soy-container {
-    width: 532px;
+    width: 100%;
 }
 
 .titulo-soy {
@@ -134,6 +154,12 @@ body {
     background-color: #FAFAFA;
     height: 1375px;
     padding: 70px 52px;
+}
+
+@media (min-width: 960px) {
+    .section-b {
+        height: 604px;
+    }
 }
 
 .titulo-servicios {
@@ -163,6 +189,12 @@ body {
     height: 100%;
 }
 
+@media (min-width: 960px) {
+    .services-container {
+        flex-direction: row;
+    }
+}
+
 .titulo-servicios {
     margin: 0;
     font-size: 32px;
@@ -172,20 +204,41 @@ body {
     color: #FAFAFA;
     background-color: #141414;
     height: 660px;
+    padding: 70px 20px;
+}
+
+@media (min-width: 960px) {
+    .section-c {
+        padding: 116px 416px 116px 304px;
+    }
 }
 
 .titulo-contacto {
-    margin: 0;
     font-size: 32px;
+    display: block;
+    width: 100%;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
 }
 
 .contact-form {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    padding: 70px 20px;
     gap: 20px;
-    height: 100%;
     justify-content: space-around;
+    width: 335px;
+    height: 428px;
+    margin: auto;
+}
+
+@media (min-width: 960px) {
+    .contact-form {
+        margin: 0 0 0 50%;
+    }
+    .titulo-contacto {
+        width: 50px;
+    }
 }
 
 .contact-form>div {
@@ -207,8 +260,9 @@ body {
     background: #FFD953;
     border: none;
     border-radius: 4px;
-    height: 45px;
-    margin-top: 60px;
+    min-height: 45px;
+    margin-top: 40px;
+    padding: 0;
     font-size: 16px;
 }
 
