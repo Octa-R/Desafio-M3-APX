@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@400;700&display=swap');
 
-/* 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
 * {
     box-sizing: border-box;
 }
@@ -45,7 +41,7 @@ body {
     width: 54px;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 490px) {
     .logo {
         width: 100px;
     }
@@ -61,35 +57,8 @@ body {
 .titulo-bienvenida {
     font-size: 48px;
     font-weight: 700;
-    padding: 200px 80px;
-    width: 375px;
-    text-align: left;
-}
-
-@media (max-width: 390px) {
-    .titulo-bienvenida {
-        padding: 0;
-        text-align: center;
-    }
-    .img-wrapper {
-        flex-direction: column;
-    }
-    .imagen-bienvenida {
-        margin: 0 auto !important;
-    }
-}
-
-.imagen-bienvenida {
     width: 300px;
-    align-self: flex-end;
-}
-
-@media (min-width: 960px) {
-    .imagen-bienvenida {
-        width: 500px;
-        height: 525px;
-        margin-right: 80px;
-    }
+    text-align: left;
 }
 
 .img-wrapper {
@@ -97,6 +66,36 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    max-width: 100%;
+    padding: 0 40px 0 40px;
+}
+
+@media (max-width:680px) {
+    .img-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 490px) {
+    .titulo-bienvenida {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.imagen-bienvenida {
+    width: 300px;
+    min-width: 200px;
+    margin: 0 auto;
+    align-self: flex-end;
+    max-width: 500px;
+    margin-right: auto;
+}
+
+@media (min-width: 960px) {
+    .imagen-bienvenida {
+        width: 500px;
+    }
 }
 
 .section-a {
@@ -204,14 +203,9 @@ body {
     color: #FAFAFA;
     background-color: #141414;
     height: 660px;
-    padding: 70px 20px;
+    padding: 50px;
 }
 
-@media (min-width: 960px) {
-    .section-c {
-        padding: 116px 416px 116px 304px;
-    }
-}
 
 .contact-container {
     height: 100%;
@@ -219,7 +213,7 @@ body {
     display: flex;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 680px) {
     .contact-container {
         flex-direction: column;
     }
@@ -231,6 +225,8 @@ body {
     width: 100%;
     display: inline-block;
     text-align: center;
+    margin-top: 70px;
+    text-justify: auto;
 }
 
 .contact-form {
